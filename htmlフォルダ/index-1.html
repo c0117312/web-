@@ -1,0 +1,33 @@
+<!--テキストを書いて保存できるwebページ作ってみよう-->
+
+<!DOCTYPE html>
+
+<html lang=ja>
+<head>
+    <meta charset="utf-8">
+    <!--name属性　メタデータ名を定義し、content属性をその内容で指定する。name値はいくつかある-->
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>webメモページ</title>
+    <link href=CSS/css2.css rel="stylesheet" type="text/css">
+
+    
+
+</head>
+
+<body>
+
+   <div class ="memoApp"> <!--divタグはその範囲を一つのブロックとする。そしてclassはそのdivの種類分けをする-->
+        <div class="memoform">
+            <input type="text" id="title" class="form-control" placeholder="タイトル"/>
+            <textarea class="form-control" rows="3" placeholder="本文" id="body"></textarea>
+            <button type="button" class="button" id="btnAadd">追加</button>
+        </div>
+        <div id="memoarea">
+        </div>
+
+        <button type="button" class="button" id=btnres>リセット</button>
+    </div>
+
+    <script type="text/javascript" src="Js/java1.js"></script>
+</body>
+</html>
